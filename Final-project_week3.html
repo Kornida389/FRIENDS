@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>F · R · I · E · N · D · S</title>
+    <style>
+      body {
+        font-family: fantasy;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/850/original/c0f84e3db7531bbcb658bcb6e05dda6d.png?1664091483");
+        background-size: 100%;
+      }
+      div {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px 80px 30px 80px;
+        border-radius: 5px;
+        background: linear-gradient(
+          0deg,
+          rgb(193, 131, 72) 0%,
+          rgb(236, 203, 158) 100%
+        );
+      }
+      h1 {
+        text-align: center;
+        font-size: 24px;
+        color: #60282b;
+        font-weight: bold;
+        line-height: 20px;
+        margin: 40px 0px 40px;
+        text-transform: uppercase;
+      }
+      h2 {
+        text-align: center;
+        font-size: 32px;
+        color: #60282b;
+        font-weight: bold;
+        line-height: 20px;
+        text-shadow: 0px 0px 1px #18090a;
+        margin: 40px 0px 30px;
+        text-transform: uppercase;
+      }
+      img {
+        display: block;
+        border-radius: 5px;
+        margin: 20px auto;
+        max-width: 100%;
+      }
+      p {
+        color: #481c1e;
+        font-weight: bold;
+        margin: 30px 0px 30px;
+        font-size: 22px;
+      }
+      .link {
+        color: #481c1e;
+        font-size: 18px;
+      }
+      hr {
+        border-top: 1px solid #5b2629;
+        border-bottom: none;
+        margin: 20px 0px 30px;
+      }
+
+      a {
+        color: #481c1e;
+        text-decoration: underline;
+        transition: all 200ms ease-in-out;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+
+      button {
+        color: #481c1e;
+        border: none;
+        background-color: #ebca9c;
+        display: block;
+        margin: 50px auto;
+        padding: 20px 38px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: fantasy;
+        border-radius: 40px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 4px 5px 8px 2px rgba(72, 28, 30, 0.4);
+      }
+      button:hover {
+        cursor: pointer;
+        color: #ebca9c;
+        background-color: #481c1eed;
+      }
+      footer {
+        font-size: 18px;
+        color: #481c1e;
+        text-align: center;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/782/original/d2ut9at-354da807-465a-4880-a879-65a747edd990.jpeg?1664025651"
+        width="600"
+        height="759"
+        alt="Friends Illustration"
+      />
+      <hr />
+
+      <h1>Don't worry if you haven't got any friends</h1>
+      <h2>because you've got</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/783/original/d2ut9at-354da807-465a-4880-a879-65a747edd990_%281%29.jpeg?1664025709"
+        width="800"
+        height="111"
+        alt="Friends Name"
+      />
+
+      <p>
+        Did you know... <br />
+        <br />
+        &nbsp &nbsp<strong><em>Friends</em></strong
+        >, the American TV series, is one of the most popular television shows
+        of all time. The show ranked no. 21 on TV Guide's 50 Greatest TV Shows
+        of All Time, and no. 5 on Empire magazine's The 50 Greatest TV Shows of
+        All Time. <br />
+        &nbsp &nbsp The series finale aired on May 6, 2004, and was watched by
+        around 52.5 million American viewers, making it the 5th-most-watched
+        series finale in television history and the most-watched television
+        episode of the 2000s.
+      </p>
+
+      <span class="link">
+        Learn more on
+        <a href="https://en.wikipedia.org/wiki/Friends" target="_blank"
+          >Wikipedia</a
+        >&nbsp👀 </span
+      ><br />
+
+      <button>Time to watch Friends</button>
+      <footer>Created by Katarina Kornida</footer>
+    </div>
+    <script>
+      function timeToWatch() {
+        let haveWatched = prompt(
+          `Have you watched Friends before? (Please enter 'yes' or 'no')`
+        );
+        if (haveWatched === "no") {
+          alert(`Then, it's high time you started the "Friends" journey 🍿`);
+        }
+        if (haveWatched === "yes") {
+          let favourite = prompt(`Who is your favourite character?`);
+
+          if (favourite === "Rachel") {
+            alert(
+              `☕️ 
+Everyone is getting married or pregnant or promoted and I'm getting coffee! And it's not even for me!`
+            );
+          } else {
+            if (favourite === "Monica") {
+              alert(
+                `👩🏻‍🍳 
+And remember: If I am harsh with you, it's only because you're doing it wrong.`
+              );
+            }
+            if (favourite === "Phoebe") {
+              alert(`🎸
+If you want to receive emails about my upcoming shows, then please give me money so I can buy a computer.`);
+            }
+            if (favourite === "Chandler") {
+              alert(`🎭
+I'm not great at the advice. Can I interest you in a sarcastic comment?`);
+            }
+            if (favourite === "Ross") {
+              alert(
+                `🥪
+That sandwich was the only good thing going on in my life! SOMEONE ATE THE ONLY GOOD THING GOING ON IN MY LIFE!`
+              );
+            }
+            if (favourite === "Joey") {
+              alert(`🍕
+I'm a Tribbiani. This is what we do. We may not be great thinkers or world leaders. We don't read a lot or run very fast but damn it, we can eat!`);
+            }
+          }
+        }
+      }
+
+      let watchButton = document.querySelector("button");
+      watchButton.addEventListener("click", timeToWatch);
+    </script>
+  </body>
+</html>
